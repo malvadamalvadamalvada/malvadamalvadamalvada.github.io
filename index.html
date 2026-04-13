@@ -6,19 +6,30 @@
     <title>𝕸 𝖆 𝖑 𝖛 𝖆 𝖉 𝖆</title>
     <style>
         /* This sets the black background and centers everything */
-        body {
-            background-color: black;
-            color: red;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden; /* Prevents scrolling */
-            
-            /* Setting Baskerville with fallbacks in case the user doesn't have it */
-            font-family: "Baskerville", "Libre Baskerville", "Times New Roman", serif;
-        }
+body {
+    /* Replace the color with your image path */
+    background-image: url('assets/manuscript.png');
+    
+    /* This centers the image and makes sure it doesn't "tile" like old wallpaper */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* This stretches the image to fill the whole screen */
+    
+    /* This ensures the image stays put even if the page scrolls */
+    background-attachment: fixed;
+    
+    /* Background color fallback in case the image takes a second to load */
+    background-color: black;
+    
+    /* Standard centering for your text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: red; 
+    font-family: 'Baskerville', serif;
+}
 
         h1 {
             font-size: 3rem;
